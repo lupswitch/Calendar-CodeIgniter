@@ -22,7 +22,7 @@ class Calendar extends CI_Controller {
 
 		$data['birthdays'] = $this->calendar_model->edit_birthdays();
 
-		$this->load->view('calendar/index', $data);
+		$this->load->view('calendar/update', $data);
 
 	}
 
@@ -33,7 +33,7 @@ class Calendar extends CI_Controller {
 
 		$this->load->model('calendar_model');
 
-		$data['birthdays'] = $this->calendar_model->delete_birthdays();
+		$data['birthdays'] = $this->calendar_model->delete_birthdays($id);
 
 		$this->load->view('calendar/index', $data, $id);
 
