@@ -34,7 +34,7 @@
 // print_r($birthdays);
 		foreach ($birthdays as $birthday) {
 				echo "<tr>";
-				echo "<td>" . "<h3>" . " " . $birthday->id     . "</h3>" . "</td>";
+				echo "<td>" . "<h6>" . " " . $birthday->id     . "</h6>" . "</td>";
 				echo "<td>" . "<h4>" . " " . $birthday->person . "</h4>". "</td>";
 				echo "<td>" . "<h4>" . " " . $birthday->day    . "</h4>". "</td>";
 				echo "<td>" . "<h4>" . " " . $birthday->month  . "</h4>". "</td>";
